@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <title>Car rasing</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="road"></div>
+
+        <img class="car" src="images/car.png" />
+
+        <img class="tree tree1" src="images/tree1.png" />
+        <img class="tree tree2" src="images/tree3.png" />
+        <img class="tree tree3" src="images/tree2.png" />
+        <img class="tree tree4" src="images/tree3.png" />
+        <img class="tree tree5" src="images/tree2.png" />
+        <img class="tree tree6" src="images/tree1.png" />
+        <img class="tree tree7" src="images/Stop.png" />
+        <img class="tree tree8" src="images/police.png"/>
+
+
+        <img class="arrow" src="images/arrow.png" />
+        <img class="danger" src="images/freeRoad.png" />
+        <img class="coin" src="images/coin.png" />
+
+
+        <audio id="coinSound" src="./audio/score.mp3"></audio>
+        <audio id="carSound" src="./audio/Calm Down.mp3"></audio>
+        <audio id="dangerSound" src="./audio/game-over-golosom.mp3"></audio>
+        <audio id="gas" src="./audio/gas.mp3"></audio>
+        <audio id="brakeSound" src="./audio/Brake.mp3"></audio>
+
+
+
+        <button type="button" class="game-button">
+            <img class="pause" src="images/pause.png" />
+            <img class="play" src="images/play.png" />
+            <div class="clock">
+                <div class="hour"></div>
+                <div>:</div>
+                <div class="minute"></div>
+                <div>:</div>
+                <div class="second"></div>
+                <div class="date"></div>
+            </div>
+
+        </button>
+    <div>
+        <div class="game-score">0</div>
+        <div class="high-score">0</div>
+
+        <div class="weather-info">
+            <div class="temperature"></div>
+            <div class="description"></div>
+            <img class="weather-icon" src="" alt="Weather Icon" />
+        </div>
+
+    </div>
+        <div class="backdrop">
+            <div class="backdrop-container">
+                <p class="finish-text">Game Result: <span class="finish-text-score">0</span></p>
+                <button type="button" class="restart-button">Start Over</button>
+            </div>
+        </div>
+
+        <script src="game.js"></script>
+    </body>
+</html>
